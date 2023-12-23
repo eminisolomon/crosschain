@@ -6,6 +6,7 @@
     "jsx": "react",
     "declaration": true,
     "sourceMap": true,
+    "rootDir": "./src",
     "noEmit": true,
     "importHelpers": true,
     "strict": true,
@@ -13,9 +14,12 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "useUnknownInCatchVariables": false
   },
   "include": ["src", "types"]
 }
