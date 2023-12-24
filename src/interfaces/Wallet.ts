@@ -27,3 +27,19 @@ export interface GetWalletFromEncryptedjsonPayload {
   password: string;
   network: string;
 }
+
+export interface ISmartContractCallPayload {
+  rpcUrl: string;
+  network: string;
+  contractAddress: string;
+  method: string;
+  methodType: 'read' | 'write';
+  params: any[];
+  payment?: any[];
+  value?: number;
+  contractAbi?: any[];
+  gasPrice?: string;
+  gasLimit?: number;
+  nonce?: number;
+  privateKey?: string;
+}

@@ -31,14 +31,12 @@ export const extractError = (error: any): string => {
   try {
     if (typeof error === 'string') {
       if (error.slice(0, 7).toLowerCase() === 'Error: ') {
-        // tslint:disable-next-line: no-parameter-reassignment
         error = error.slice(7);
       }
       return error;
     }
     return JSON.stringify(error);
   } catch (error) {
-    // Ignore JSON error
   }
   return String(error);
 };
