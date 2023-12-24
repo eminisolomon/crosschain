@@ -12,7 +12,28 @@
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
-  "keywords": [],
+  "keywords": [
+    "multichain",
+    "crypto",
+    "wallet",
+    "ethereum",
+    "blockchain",
+    "cryptocurrency",
+    "evm",
+    "solana",
+    "bitcoin",
+    "evm",
+    "binance smart chain",
+    "polygon",
+    "avalanche",
+    "waves",
+    "cryptography"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eminisolomon/crosschain"
+  },
+  "homepage": "https://github.com/eminisolomon/crosschain/blob/main/README.md",
   "author": "",
   "license": "ISC",
   "devDependencies": {
