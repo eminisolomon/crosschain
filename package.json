@@ -1,8 +1,13 @@
 {
   "name": "cryptochain",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
@@ -31,10 +36,21 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/eminisolomon/crosschain"
+    "url": "https://github.com/eminisolomon/cryptochain"
   },
-  "homepage": "https://github.com/eminisolomon/crosschain/blob/main/README.md",
-  "author": "",
+  "homepage": "https://github.com/eminisolomon/cryptochain/blob/main/README.md",
+  "author": "eminisolomon",
+  "module": "dist/cryptochain.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/cryptochain.cjs.production.min.js",
+      "limit": "500 KB"
+    },
+    {
+      "path": "dist/cryptochain.esm.js",
+      "limit": "500 KB"
+    }
+  ],
   "license": "ISC",
   "devDependencies": {
     "@size-limit/preset-small-lib": "^7.0.8",
